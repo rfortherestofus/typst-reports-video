@@ -1,4 +1,29 @@
-#let blueline() = { line(length: 100%, stroke: 2pt + rgb("#68ACE5")) }
+#let connected_boxes(text1: "", text2: "") = {
+  let box-style = (width: auto, fill: rgb("#002D72"), inset: (y: 10pt, x: 20pt))
+
+  let left_box = box(..box-style, [
+    #text(fill: white, weight: "bold", font: "Bitter", text1)
+  ])
+
+  let right_box = box(..box-style, [
+    #text(fill: white, weight: "bold", font: "Bitter", text2)
+  ])
+
+  let connector = align(center + horizon)[
+    #line(length: 61pt, stroke: rgb("#68ACE5") + 3pt)
+  ]
+
+  // Now we return three elements: left box, connector, right box
+  grid(
+    columns: (auto, auto, 2in),
+    left_box, connector, right_box,
+  )
+}
+
+// usage
+#let blueline() = {
+  line(length: 100%, stroke: 2pt + rgb("#68ACE5"))
+}
 
 #let source_text(source_info) = {
   align(right)[

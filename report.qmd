@@ -11,6 +11,11 @@ format:
 
 This brief illustrates the current status of childhood immunization in Alabama and is intended to inform state-level policy decisions and priorities. Takeaways include:
 
+```{=typst}
+#connected_boxes(text1: "text", text2: "another text")
+```
+
+
 - State-level immunization coverage in Alabama for MMR vaccination is above national levels.
 - Alabama’s non-medical exemption rate among kindergartners is lower than the U.S. median.
 - State-level per capita public health spending is higher than the national rate.
@@ -135,3 +140,5 @@ Measles outbreak cost:
 - Pike J, Melnick A, Gastañaduy PA, et al. Societal Costs of a Measles Outbreak. Pediatrics. 2021;147(4):e2020027037. doi:10.1542/peds.2020-027037
 
 *Note: The high-level data included in this report do not reflect statewide variation in vaccination coverage or disease status. Further, state reporting policies may limit data completeness. For any data-related questions, please contact ivac@jh.edu.*
+
+
